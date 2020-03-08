@@ -73,12 +73,13 @@ fn ops() {
 
 fn main() {
 
-  //data_types();
-  //ops();
-  //bitops();
-  //sh::stack_and_heap();
+  // data_types();
+  // ops();
+  // bitops();
+  // sh::stack_and_heap();
   // flow::if_statements();
   // flow::while_and_loop();
-  flow::for_loop();
+  // flow::for_loop();
+  flow::match_stmt();
 
 }

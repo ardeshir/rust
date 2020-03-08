@@ -27,6 +27,7 @@ pub fn if_statements() {
 
 pub fn while_and_loop() {
 
+  println!("\nFrom flow.rs module");
    let mut x = 1;
 
    while x < 1000 {
@@ -44,7 +45,8 @@ pub fn while_and_loop() {
 }
 
 pub fn for_loop() {
-    
+
+   println!("\nFrom flow.rs module");
     for x in 1 ..13 {
         if x == 11 { continue; }
         if x == 12 { break; }
@@ -59,8 +61,21 @@ pub fn for_loop() {
         println!("x is {} & y is {}", x, y)
     }
 
-
    for (pos, y) in (30..41).enumerate() {
        println!("index: {}, y: {}", pos, y);
    }
+}
+
+pub fn match_stmt() {
+    println!("\nFrom flow.rs module");
+    let country_code = 777; // 1...999 is depricated, use 1..=999
+    let country = match country_code {
+        44 => "UK",
+        46 => "Sweden",
+        7 => "Russia",
+        1..=999 => "Unknown",
+        _ => "Invalid"
+    };
+    println!("The country with code {} is {}", country_code, country)
+
 }
