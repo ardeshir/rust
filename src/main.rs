@@ -78,6 +78,7 @@ fn main() {
   //bitops();
   //sh::stack_and_heap();
   // flow::if_statements();
-  flow::while_and_loop();
+  // flow::while_and_loop();
+  flow::for_loop();
 
 }

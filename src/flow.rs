@@ -31,13 +31,36 @@ pub fn while_and_loop() {
 
    while x < 1000 {
         x *=2 ;
-        if x == 64 { continue; }
-        println!("x = {}", x)
+        if x == 1024 { continue; }  // don't print 1024
+        println!("x = {}", x);
    }
+
    let mut y = 1;
    loop {  // while true
         y *= 2;
         println!("y = {}", y);
         if y == 1<<10 { break; }
+   }
+}
+
+pub fn for_loop() {
+    
+    for x in 1 ..13 {
+        if x == 11 { continue; }
+        if x == 12 { break; }
+        println!("x is {}", x)
+    }
+
+    for (x,y) in (1..13).enumerate() {
+        if x == 11 { continue; }
+        if y == 11 { continue; }
+        if x == 12 { break; }
+        if y == 12 { break; }
+        println!("x is {} & y is {}", x, y)
+    }
+
+
+   for (pos, y) in (30..41).enumerate() {
+       println!("index: {}, y: {}", pos, y);
    }
 }
