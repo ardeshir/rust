@@ -1,3 +1,7 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
+mod sh;
 use std::mem;
 
 fn bitops() {
@@ -67,7 +71,9 @@ fn ops() {
 
 fn main() {
 
-  data_types();
-  ops();
-  bitops();
+  //data_types();
+  //ops();
+  //bitops();
+  sh::stack_and_heap();
+
 }
